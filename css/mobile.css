@@ -1,0 +1,374 @@
+@media (max-width: 767.98px) {
+    /* ____________________RESET____________________ */
+    /* Xư lý margin, padding toàn cục */
+    * {
+        padding: 0;
+        margin:0;
+    }
+
+    /* ____________________BANNER____________________ */
+    /* Chỉnh sửa hình ảnh của Banner */
+    .img {
+        overflow-x:hidden;
+        background-position: center; 
+        background-size: cover; 
+        height: 700px;
+        object-fit: cover;
+        object-position: 50% -40%;;
+        filter: brightness(70%);
+        background-image: url("../images/banner.jpg");
+    }
+    /* Chỉnh sửa kích thước của phần tên trong banner */
+    .mobile-name {
+        font-size: 35px;
+        font-weight: 500;
+    }
+    /* Chỉnh sửa vị trí phần tên trong banner */
+    .mobile-position {
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    /* ____________________GENERAL-INFOR____________________ */
+    /* Chỉnh sửa form nhập để lấy thông tin cá nhân */
+    .form-input {
+        width: 95%;
+        padding: 7px 12px;
+        font-size: 15px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        box-sizing: border-box
+    }
+    /* Phần placeholder của form nhập liệu */
+    .form-input::placeholder {
+        font-size: 14px; 
+        color: #aaa; 
+    }
+    /* Phần để bóng và đường viền của form nhập liệu */
+    .form-input:focus {
+        outline: none;
+        border-color:rgb(43, 179, 247);
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.685);
+    }
+    /* chỉnh sửa thông báo lỗi khi nhập sai */
+    .error-message {
+        font-size: 13px;
+    }
+    /* Chỉnh sửa phần gợi ý nhập form*/
+    .helper-text {
+        font-size: 12px;
+        color: #6c757d;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    /* Chỉnh sửa nút submit */
+    .submit-btn {
+        padding: 5px 12px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        background-color: rgba(0, 123, 255, 0.685);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.2s
+    }
+    /* Hiệu hút khi giữ nút submit */
+    .submit-btn:hover {
+        background-color: #285a8c;
+    }
+    /* Chỉnh sửa kích thước các tiêu đề */
+    .header-size {
+        font-size: 27px;
+        font-weight: 500;
+    }
+    /* Chỉnh sửa phần màu nền của hộp */
+    .background-color {
+        background-color: #EFEFEF;
+    }
+    /* ____________________BOX-INFOR____________________ */
+    /* Chỉnh sửa thanh process bar */
+    .progress-bar {
+        display: flex;
+        flex-direction: row;
+        gap: 9px;
+        justify-content: start;
+    }
+    /* Thanh process chưa hoàn thành */
+    .segment {
+        width: 55px;
+        height: 3px; 
+        border-radius: 5px; 
+        background-color: #ddd;
+    }
+    /* Các process bar đã hoàn thành */
+    .segment-completed {
+        background-color: rgb(43, 179, 247);
+        width: 55px;
+        height: 3px;
+        border-radius: 5px;
+    }
+    /* Icon */
+    /* Hobby- Icon */
+    .hobby-icon-mobile {
+        width: 60px;
+        height: 60px;
+        border: 2px solid rgb(43, 179, 247);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .ic-megaphone,.ic-strategy,.ic-hotairballoon,.ic-basket {
+        color: rgb(43, 179, 247);
+        font-size: 25px;
+    }
+    .hobby-box-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 20px;
+    }
+    /* Kiểu hiển thị flex cho mobile */
+    .flex-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Chỉnh sử phần header của từng hộp */
+    .box-title-mobile {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items: end;
+        justify-items: center;
+        margin-top: 30px;
+    }
+    /* icon của của các hộp  */
+    .ic-toolbox,.ic-tools-2 {
+        font-size: 45px;
+        color: #aca6a6;
+        justify-self: self-start;
+        margin-left: 20px
+    }
+    .experience-title {
+        align-self: self-end;
+        justify-self: self-start;
+        padding-left:20px;
+        margin: 0;
+    }
+    /* Chỉnh sửa phần thời gian hiện tại */
+    .now {
+        color: white;
+        background-color: rgb(43, 179, 247);
+        font-style: italic;
+        padding-left: 11px;
+        padding-right: 11px;
+        border-radius: 7px;
+    }
+    /* Phần này không được copy vào file kia */
+    .list-fix::before {
+        content:" - ";
+    }
+    /* Làm dấu chấm xanh đằng trước mỗi labels  */
+    .company {
+        position: relative;
+    }
+    .company::before {
+        content: "";
+        width: 15px; 
+        height: 15px;
+        border-radius: 50%;
+        border: 3px solid white;
+        background-color: rgb(43, 179, 247);
+        display: inline-block;
+        position: absolute;
+        left: -35px;
+        top: 5px;
+    }
+    /* Chỉnh sửa tiêu đề phần kĩ năng */
+    .skill-title {
+        align-self: self-end;
+        justify-self: self-start;
+        padding:0;
+        margin: 0;
+    }
+    /* Chỉnh sửa các skill */
+    .skill {
+        margin-bottom: 17px;
+    }
+    .skill p {
+        margin-bottom: 10px;
+    }
+    /* Chỉnh sửa phần ngôn ngữ */
+    .ic-mic {
+        font-size: 45px;
+        color: #aca6a6;
+        justify-self: self-end;
+        margin-left: 20px;
+        margin-right: 25px;
+    }
+    /* Chỉnh sửa phần title của ngôn ngữ */
+    .language-title {
+        align-self: self-end;
+        justify-self: self-start;
+        padding:0;
+        margin: 0;
+    }
+    .language {
+        margin-bottom: 17px;
+    }
+    /* Chỉnh sửa sở thích */
+    /* Chỉnh sửa icon ở box sở thích */
+    .ic-telescope {
+        font-size: 45px;
+        color: #aca6a6;
+        justify-self: self-end;
+        margin-left: 20px;
+        margin-right: 25px;
+    }
+    /* Chỉnh sửa tiêu đề sở thích */
+    .hobby-title {
+        align-self: self-end;
+        justify-self: self-start;
+        padding-left:20px;
+        margin: 0;
+    }
+    .hobby {
+        padding-left: 20px;
+    }
+    /* Chỉnh sửa phần activity */
+    /* Chỉnh sửa tiêu đề phần activity */
+    .activity-title {
+        align-self: self-end;
+        justify-self: self-start;
+        padding-left:20px;
+        margin: 0;
+    }
+    /* Chỉnh sửa phần education */
+    /* Chỉnh sửa phần icon của education */
+    .ic-pencil {
+        font-size: 45px;
+        color: #aca6a6;
+        justify-self: self-end;
+        margin-left: 20px;
+        margin-right: 25px;
+    }
+    /* Chỉnh sửa tiêu đề của phần education */
+    .education-title {
+        align-self: self-end;
+        justify-self: self-start;
+        padding-left:20px;
+        margin: 0;
+    }
+    /* Chỉnh sửa box-infor toàn thể */
+    .box-infor-mobile {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    /* Chỉnh sửa tiêu đề của mobile */
+    .mobile-title {
+       font-size: 27px; 
+       font-weight:500;
+    }
+    /* Chỉnh sửa layout cho phần mobile */
+    .layout-mobile {
+        display: flex; 
+        flex-direction: column;
+    }
+    /* Chỉnh sửa phần nút view-more */
+    .toggle-button {
+        background-color: #fef9c3;
+        color: #57534e;
+        border: 1px solid #fde68a;
+        padding: 5px 30px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 20px;
+        margin-top: 7px;
+        margin-bottom: 30px;
+        transition: all 0.2s;
+    }
+    /* Chỉnh sửa phần nút view-more */
+    .toggle-button:hover {
+        background-color: #fde047;
+    }
+    .toggle-button.expanded .arrow {
+        transform: rotate(180deg);
+    }
+    .hidden-content {
+        display: grid;
+        grid-template-rows: 0fr; 
+        transition: grid-template-rows 0.4s ease-out;
+    }
+    .hidden-content.expanded {
+        grid-template-rows: 1fr;
+    }
+    .content-inner {
+        overflow: hidden;
+    }
+
+    /* ____________________ACHIEVEMENT____________________ */
+    /* Chỉnh sửa tiêu đề của phần thành tựu */
+    .achievement-title {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    /* Chỉnh sửa các hình ảnh của certificate */
+    .image-certificate {
+        width: 100%;
+        flex-direction: column;
+    }
+    /* Thêm đường line bên dưới mỗi hộp */
+    .line-mobile-bottom {
+        position: relative;
+    }
+    .line-mobile-bottom::after {
+        content: "";
+        background-color: red;
+        position: absolute;
+        height: 1px;
+        left: 0px;
+        right: 0px;
+        top: 100%;
+    }
+
+    /* ____________________PROJECT____________________ */
+    /* Chỉnh sửa tiêu đề của project */
+    .project-title {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    /* Chỉnh sửa phần thời gian trong các project */
+    .project-time-fix {
+        background-color: #2196f3;
+        color: white;
+        padding: 4px 10px;
+        border-radius: 1000px;
+        display: inline-block;
+        font-size: 14px;
+        font-family: sans-serif;
+        text-align: start;
+    }
+    /* Chỉnh sửa phần chữ trong project */
+    .text-project {
+        font-size: 14px;
+    }
+    /* Layout của các cột label như mô tả, nhiệm vụ, công nghệ */
+    .grid-detail {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+    /* ____________________FOOTER____________________ */
+    /* Chỉnh sửa các biểu tượng mạng xã hội */
+    .icon-facebook-circled,.icon-linkedin-circled,.icon-github-circled {
+        font-size: 40px;
+        color:#2196f3;
+    }
+}

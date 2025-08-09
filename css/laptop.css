@@ -1,0 +1,393 @@
+@media (min-width: 992px) {
+    /* Chirnh sửa thanh process bar */
+    /* Các process bar chưa hoàn thành */
+    .progress-bar {
+        display: flex;
+        flex-direction: row;
+        gap: 9px;
+        justify-content: start;
+    }
+    /* ______________________BANNER____________________ */
+    .img {
+        overflow-x:hidden;
+        background-position: center; 
+        background-size: cover; 
+        height: 500px;
+        object-fit: cover;
+        object-position: 50% -40%;;
+        filter: brightness(70%);
+        background-image: url("../images/banner.jpg");
+    }
+    .laptop-name {
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .laptop-position {
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .border-start-md-only {
+        border-left: 1px solid rgb(196, 193, 193);
+    }
+    .border-md-end-only {
+        border-right: 1px solid rgb(196, 193, 193);
+    }
+    .border-laptop {
+        border-top: 1px solid rgb(196, 193, 193);
+        border-bottom: 1px solid rgb(196, 193, 193);
+        
+    }
+    /* Chỉnh sửa phần padding các đầu mục */
+    .padding-nav-tablet {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .padding-infor {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .name-size {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .job-size {
+        font-size: 12px;
+        margin-left: 15px;
+        color:#ddd;
+    }
+    /* Chỉnh sửa chữ */
+    .laptop-nav-text {
+        font-size: 13px;
+    }
+
+    /* ____________________GENERAL-INFOR____________________ */
+    .form-input {
+        width: 95%;
+        padding: 10px 12px;
+        font-size: 15px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        box-sizing: border-box
+    }
+    .form-input::placeholder {
+        font-size: 14px; 
+        color: #aaa; 
+    }
+    .form-input:focus {
+        outline: none;
+        border-color:rgb(43, 179, 247);
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.685);
+    }
+    .error-message {
+        font-size: 13px;
+    }
+    .helper-text {
+        font-size: 12px;
+        color: #6c757d;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    .submit-btn {
+        padding: 5px 12px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        background-color: rgba(0, 123, 255, 0.685);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.2s
+    }
+    .submit-btn:hover {
+        background-color: #285a8c;
+    }
+
+    /* ____________________BOX-INFOR____________________ */
+    .header-size {
+        font-size: 27px;
+        font-weight: 500;
+    }
+    .background-color {
+        background-color: #EFEFEF;
+    }
+    .segment {
+        width: 55px;
+        height: 3px; 
+        border-radius: 5px; 
+        background-color: #ddd;
+    }
+    
+    /* Các process bar đã hoàn thành */
+    .segment-completed {
+        background-color: rgb(43, 179, 247);
+        width: 55px;
+        height: 3px;
+        border-radius: 5px;
+    }
+    /* Icon */
+    /* Hobby- Icon */
+    .hobby-icon-laptop {
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgb(43, 179, 247);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .ic-megaphone,.ic-strategy,.ic-hotairballoon,.ic-basket {
+        color: rgb(43, 179, 247);
+        font-size: 15px;
+    }
+    .hobby-box-laptop {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 20px;
+    }
+    .flex-laptop {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    /* Sửa box title của tablet */
+    .box-title-laptop {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 20px;
+    }
+    /* icon của của các hộp  */
+    .ic-toolbox,.ic-tools-2 {
+        font-size: 37px;
+        color: #aca6a6;
+        justify-self: self-end;
+        margin-top: 20px;
+    }
+    .experience-title {
+        align-self: self-end;
+        justify-self: self-start;
+        padding-left:20px;
+        margin: 0;
+    }
+    /* Chỉnh sửa phần thời gian hiện tại */
+    .now {
+        color: white;
+        background-color: rgb(43, 179, 247);
+        font-style: italic;
+        padding-left: 11px;
+        padding-right: 11px;
+        border-radius: 7px;
+    }
+    /* Phần này không được copy vào file kia */
+    .list-fix::before {
+        content:" - ";
+    }
+    /* Làm dấu chấm xanh đằng trước mỗi labels  */
+    .company {
+        position: relative;
+    }
+    .company::before {
+        content: "";
+        width: 15px; 
+        height: 15px;
+        border-radius: 50%;
+        border: 3px solid white;
+        background-color: rgb(43, 179, 247);
+        display: inline-block;
+        position: absolute;
+        left: -35px;
+        top: 5px;
+    }
+    /* Chỉnh sửa các skill */
+    .skill {
+        margin-bottom: 25px;
+    }
+    .skill p {
+        margin-bottom: 10px;
+    }
+    /* Chỉnh sửa phần ngôn ngữ */
+    .ic-mic {
+        font-size: 37px;
+        color: #aca6a6;
+        justify-self: self-end;
+        margin-top: 20px;
+    }
+    .language {
+        margin-bottom: 17px;
+    }
+    /* Chỉnh sửa sở thích */
+    /* Chỉnh sửa icon ở box sở thích */
+    .ic-telescope {
+        font-size: 45px;
+        color: #aca6a6;
+        justify-self: self-end;
+        align-self: self-end;
+    }
+    /* Chỉnh sửa tiêu đề sở thích */
+    .hobby-title {
+        align-self: self-end;
+        justify-self: self-start;
+        padding-left:20px;
+        margin: 0;
+    }
+    .hobby {
+        padding-left: 20px;
+    }
+    /* Chỉnh sửa phần activity */
+    /* Chỉnh sửa tiêu đề phần activity */
+    .activity-title {
+        align-self: self-end;
+        justify-self: self-start;
+        padding-left:20px;
+        margin: 0;
+        grid-row: 2;
+    }
+    /* Chỉnh sửa phần education */
+    .education-title {
+        align-self: self-end;
+        justify-self: self-start;
+        padding-left:20px;
+    }
+    /* Chỉnh sửa phần icon của education */
+    .ic-pencil {
+        font-size: 45px;
+        color: #aca6a6;
+        justify-self: self-end;
+        margin-top: 10px;
+    }
+    /* Chỉnh sửa tiêu đề của mobile */
+    .tablet-title {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    /* Chỉnh sửa layout cho phần laptop */
+    .layout-laptop {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: center;
+    }
+    .laptop-title {
+        font-size: 22px;
+        font-weight: 500;
+        justify-self: self-start;
+        align-self: self-end;
+        margin-top: 20px;
+        margin-bottom: 0
+    }
+    .text-fix {
+        font-size: 10px;
+    }
+    /* Chỉnh sửa nội dung ẩn hiện của hộp */
+    .toggle-button {
+        background-color: #fef9c3;
+        color: #57534e;
+        border: 1px solid #fde68a;
+        padding: 5px 30px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 17px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        transition: all 0.2s;
+    }
+    .toggle-button:hover {
+        background-color: #fde047;
+    }
+    /* Khi nút có class 'expanded', xoay mũi tên */
+    .toggle-button.expanded .arrow {
+        transform: rotate(180deg);
+    }
+    .hidden-content {
+        display: grid;
+        grid-template-rows: 0fr; 
+        transition: grid-template-rows 0.4s ease-out;
+    }
+    /* 2. Class 'expanded' định nghĩa trạng thái "mở rộng" */
+    .hidden-content.expanded {
+        grid-template-rows: 1fr;
+    }
+    .content-inner {
+        overflow: hidden;
+    }
+
+    /* ____________________ACHIEVEMENT____________________ */
+    .achievement-title {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .text-certificate {
+        font-size: 10px;
+    }
+    .text-description {
+        font-size: 7px;
+    }
+    .image-certificate {
+        width: 100%;
+        flex-direction: column;
+    }
+    .line-md-between {
+        position: relative;
+    }
+    .line-md-between::after {
+        content: "";
+        background-color: red;
+        position: absolute;
+        width: 1px;
+        top: 0;
+        bottom: 0;
+        left:100%
+    }
+    .line-laptop-bottom {
+        position: relative;
+    }
+    .line-laptop-bottom::before {
+        content: "";
+        background-color: red;
+        position: absolute;
+        height: 1px;
+        left: 0px;
+        right: 0px;
+        top: 70%;
+    }
+
+    /* ____________________PROJECT-TITLE____________________ */
+    .project-title {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .project-time-fix {
+        background-color: #2196f3;
+        color: white;
+        padding: 4px 10px;
+        border-radius: 1000px;
+        display: inline-block;
+        font-size: 14px;
+        font-family: sans-serif;
+        text-align: start;
+    }
+    .text-project {
+        font-size: 14px;
+    }
+    .grid-detail {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .project {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    /* ____________________FOOTER____________________ */
+    .icon-facebook-circled,.icon-linkedin-circled,.icon-github-circled {
+        font-size: 40px;
+        color:#2196f3;
+    }
+}

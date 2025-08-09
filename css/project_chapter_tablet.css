@@ -1,0 +1,66 @@
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .layout-tablet {
+        display: grid;
+        grid-template-rows: auto;
+    }
+    /* Chỉnh sưa phần Goal của mobile */
+    .goal {
+        background-color: #e0edf8;
+    }
+    .team {
+        background-color: #e0edf8;
+        grid-row: 3/4;
+    }
+    .timeline {
+        background-color: #e0edf8;
+    }
+    .primary {
+        background-color: #e0edf8;
+        grid-row: 4/5;
+    }
+    .scope {
+        background-color: #e0edf8;
+        grid-row: 2/3;
+    }
+    /* Chỉnh sửa phần title */
+    .title {
+        color: rgb(77, 77, 243);
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .grid-display {
+        display: grid; 
+        grid-template-rows: auto;
+    }
+    .icon-fix {
+        font-size: 25px;
+        align-self: center;
+    }
+    .border-color-title {
+        border-bottom: 1px solid rgba(119, 119, 119, 0.425);
+    }
+    .border-color-element-1 {
+        border-bottom: 1px solid rgb(201, 199, 199);
+    }
+    .border-color-element-2 {
+        border-bottom: 1px dashed skyblue
+    }
+    .circle-box {
+        width: 55px;
+        height: 55px;
+        background-color: #a48dfc;
+        color: white;
+        border: 2px solid #555;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        font-size: 25px;
+        font-family: Arial, sans-serif;
+        margin-left: 30px;
+    }
+    .title-scope {
+        font-weight: bold;
+        font-size: 22px;
+    } 
+}
